@@ -35,8 +35,8 @@ ngu_replace_str="          GNB_IPV4_ADDRESS_FOR_NGU            = \"$gnb_ip_addr\
 ng_regex="s/$ng_search_str/$ng_replace_str/g"
 ngu_regex="s/$ngu_search_str/$ngu_replace_str/g"
 
-sed "$ng_regex" "$gnb_conf_file"
-sed "$ngu_regex" "$gnb_conf_file"
+sed "'$ng_regex'" "$gnb_conf_file"
+sed "'$ngu_regex'" "$gnb_conf_file"
 
 ip route add 192.168.70.128/26 via "$cn_ip_addr" dev eth0
 
