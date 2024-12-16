@@ -31,8 +31,8 @@ fi
 
 uhd_find_devices
 
+source araenv
 cd /root/openairinterface5g || exit
-source oaienv
 cd cmake_targets/ran_build/build || exit
 
 ./nr-softmodem -O "$conf_file" --gNBs.[0].min_rxtxtime 6 --sa -E --continuous-tx \
