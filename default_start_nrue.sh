@@ -12,9 +12,15 @@ else
   log_file="$1"
 fi
 
-if [[ ! -f "$log_file" ]]; then
-  touch "$log_file"
-  chmod 744 "$log_file"
+#if [[ ! -f "$log_file" ]]; then
+#  touch "$log_file"
+#  chmod 744 "$log_file"
+#fi
+
+if [[ -f "$log_file" ]]; then
+  rm "$log_file"
+elif [[ -d "$log_file" ]]; then
+  rm -r "$log_file"
 fi
 
 uhd_find_devices
