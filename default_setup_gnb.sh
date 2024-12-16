@@ -26,8 +26,8 @@ fi
 
 ip_regex='"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+"'
 
-ng_search_str="GNB_IPV4_ADDRESS_FOR_NG_AMF +=\s+;"
-ngu_search_str="GNB_IPV4_ADDRESS_FOR_NGU +=\s+;"
+ng_search_str="GNB_IPV4_ADDRESS_FOR_NG_AMF +=\s+;""$ip_regex"
+ngu_search_str="GNB_IPV4_ADDRESS_FOR_NGU +=\s+;""$ip_regex"
 
 ng_replace_str='          GNB_IPV4_ADDRESS_FOR_NG_AMF         = "'"$gnb_ip_addr"'\/24";'
 ngu_replace_str='          GNB_IPV4_ADDRESS_FOR_NGU            = "'"$gnb_ip_addr"'\/24";'
