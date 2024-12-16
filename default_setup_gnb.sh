@@ -25,24 +25,24 @@ fi
 #sed 's/GNB_IPV4_ADDRESS_FOR_NGU +=\s+"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+";/          GNB_IPV4_ADDRESS_FOR_NGU            = "'+"$gnb_ip_addr"+'\/24";/g' "$gnb_conf_file"
 
 #ip_regex='"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+"'
-#ip_regex='^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$'
-#
-#ng_search_str="GNB_IPV4_ADDRESS_FOR_NG_AMF +=\s+;""$ip_regex"
-#ngu_search_str="GNB_IPV4_ADDRESS_FOR_NGU +=\s+;""$ip_regex"
-#
-#ng_replace_str='          GNB_IPV4_ADDRESS_FOR_NG_AMF         = "'"$gnb_ip_addr"'\/24";'
-#ngu_replace_str='          GNB_IPV4_ADDRESS_FOR_NGU            = "'"$gnb_ip_addr"'\/24";'
-#
-#ng_regex="s/$ng_search_str/$ng_replace_str/g"
-#ngu_regex="s/$ngu_search_str/$ngu_replace_str/g"
-#
-#sed "$ng_regex" "$gnb_conf_file"
-#sed "$ngu_regex" "$gnb_conf_file"
+ip_regex='^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$'
 
-default_addr='10.0.4.151'
-ip_regex="s/$default_addr/$gnb_ip_addr/g"
+ng_search_str="GNB_IPV4_ADDRESS_FOR_NG_AMF +=\s+;""$ip_regex"
+ngu_search_str="GNB_IPV4_ADDRESS_FOR_NGU +=\s+;""$ip_regex"
 
-sed "$ip_regex" "$gnb_conf_file"
+ng_replace_str='          GNB_IPV4_ADDRESS_FOR_NG_AMF         = "'"$gnb_ip_addr"'\/24";'
+ngu_replace_str='          GNB_IPV4_ADDRESS_FOR_NGU            = "'"$gnb_ip_addr"'\/24";'
+
+ng_regex="s/$ng_search_str/$ng_replace_str/g"
+ngu_regex="s/$ngu_search_str/$ngu_replace_str/g"
+
+sed "$ng_regex" "$gnb_conf_file"
+sed "$ngu_regex" "$gnb_conf_file"
+
+#default_addr='10.0.4.151'
+#ip_regex="s/$default_addr/$gnb_ip_addr/g"
+#
+#sed "$ip_regex" "$gnb_conf_file"
 
 ip route add 192.168.70.128/26 via "$cn_ip_addr" dev eth0
 
