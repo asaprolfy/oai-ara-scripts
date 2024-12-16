@@ -21,8 +21,8 @@ else
   gnb_conf_file="$2"
 fi
 
-sed '\s^GNB_IPV4_ADDRESS_FOR_NG_AMF +=\s+"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+";$/          GNB_IPV4_ADDRESS_FOR_NG_AMF         = "'+"$gnb_ip_addr"+'\/24";/' "$gnb_conf_file"
-sed '\s^GNB_IPV4_ADDRESS_FOR_NGU +=\s+"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+";$/          GNB_IPV4_ADDRESS_FOR_NGU            = "'+"$gnb_ip_addr"+'\/24";/' "$gnb_conf_file"
+sed '\s^GNB_IPV4_ADDRESS_FOR_NG_AMF +=\s+"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+";$/          GNB_IPV4_ADDRESS_FOR_NG_AMF         = "'+"$gnb_ip_addr"+'\/24";/g' "$gnb_conf_file"
+sed '\s^GNB_IPV4_ADDRESS_FOR_NGU +=\s+"\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b/[0-9]+";$/          GNB_IPV4_ADDRESS_FOR_NGU            = "'+"$gnb_ip_addr"+'\/24";/g' "$gnb_conf_file"
 
 ip route add 192.168.70.128/26 via "$cn_ip_addr" dev eth0
 
