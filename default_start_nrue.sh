@@ -17,6 +17,8 @@ if [[ ! -f "$log_file" ]]; then
   chmod 744 "$log_file"
 fi
 
+uhd_find_devices
+
 cd ~/openairinterface5g || exit
 source oaienv
 cd cmake_targets/ran_build/build || exit
@@ -24,7 +26,7 @@ cd cmake_targets/ran_build/build || exit
 ././nr-uesoftmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/ue.conf \
                    -r 106 --numerology 1 --band 78 -C 3604800000 --ue-fo-compensation \
                    --sa -E --ue-txgain 0 --usrp-args "serial=8000170" --nokrnmod 1 \
-                   | tee -a "$log_file" &
+                   > "$log_file" 2>&1 &
 
 echo "nrue process begun"
 exit 0

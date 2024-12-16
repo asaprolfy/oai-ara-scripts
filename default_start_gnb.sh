@@ -23,12 +23,14 @@ else
   conf_file="$2"
 fi
 
+uhd_find_devices
+
 cd /root/openairinterface5g || exit
 source oaienv
 cd cmake_targets/ran_build/build || exit
 
 ./nr-softmodem -O "$conf_file" --gNBs.[0].min_rxtxtime 6 --sa -E --continuous-tx \
-               | tee -a "$log_file" &
+               > "$log_file" 2>&1 &
 
 echo "gnb process begun"
 exit 0
