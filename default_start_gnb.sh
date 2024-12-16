@@ -36,7 +36,7 @@ source oaienv
 cd cmake_targets/ran_build/build || exit
 
 ./nr-softmodem -O "$conf_file" --gNBs.[0].min_rxtxtime 6 --sa -E --continuous-tx \
-               > "$log_file" 2>&1 &
+               > "$log_file" &
 
 echo "gnb process begun"
 exit 0
