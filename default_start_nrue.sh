@@ -14,7 +14,7 @@ fi
 
 if [[ ! -f "$log_file" ]]; then
   touch "$log_file"
-  chmod 755 "$log_file"
+  chmod 744 "$log_file"
 fi
 
 cd ~/openairinterface5g || exit
