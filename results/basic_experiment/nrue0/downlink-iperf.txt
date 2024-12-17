@@ -3,36 +3,36 @@ Client connecting to 10.0.0.4, UDP port 5001
 Sending 1470 byte datagrams, IPG target: 1121.52 us (kalman adjust)
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 192.168.70.135 port 39040 connected with 10.0.0.4 port 5001
+[  1] local 192.168.70.135 port 55489 connected with 10.0.0.4 port 5001
 [ ID] Interval       Transfer     Bandwidth
 [  1] 0.0000-10.0018 sec  12.5 MBytes  10.5 Mbits/sec
 [  1] Sent 8921 datagrams
 [  1] Server Report:
 [ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
-[  1] 0.0000-10.0093 sec  10.9 MBytes  9.17 Mbits/sec   1.105 ms 1118/8920 (13%)
-root@f240ac7c83d0:~/oai-cn5g# docker exec -it oai-ext-dn iperf -c 10.0.0.4 -u -b 10M --bind 192.168.70.135
+[  1] 0.0000-10.0008 sec  11.2 MBytes  9.37 Mbits/sec   0.527 ms 952/8920 (11%)
+root@f240ac7c83d0:~# docker exec -it oai-ext-dn iperf -c 10.0.0.4 -u -b 10M --bind 192.168.70.135
 ------------------------------------------------------------
 Client connecting to 10.0.0.4, UDP port 5001
 Sending 1470 byte datagrams, IPG target: 1121.52 us (kalman adjust)
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 192.168.70.135 port 59679 connected with 10.0.0.4 port 5001
+[  1] local 192.168.70.135 port 42544 connected with 10.0.0.4 port 5001
 [ ID] Interval       Transfer     Bandwidth
-[  1] 0.0000-10.0019 sec  12.5 MBytes  10.5 Mbits/sec
+[  1] 0.0000-10.0018 sec  12.5 MBytes  10.5 Mbits/sec
 [  1] Sent 8921 datagrams
 [  1] Server Report:
 [ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
-[  1] 0.0000-10.0006 sec  11.2 MBytes  9.43 Mbits/sec   0.573 ms 899/8920 (10%)
-root@f240ac7c83d0:~/oai-cn5g# docker exec -it oai-ext-dn iperf -c 10.0.0.4 -u -b 10M --bind 192.168.70.135
+[  1] 0.0000-10.0011 sec  11.0 MBytes  9.27 Mbits/sec   0.468 ms 1038/8920 (12%)
+root@f240ac7c83d0:~# docker exec -it oai-ext-dn iperf -c 10.0.0.4 -u -b 10M --bind 192.168.70.135
 ------------------------------------------------------------
 Client connecting to 10.0.0.4, UDP port 5001
 Sending 1470 byte datagrams, IPG target: 1121.52 us (kalman adjust)
 UDP buffer size:  208 KByte (default)
 ------------------------------------------------------------
-[  1] local 192.168.70.135 port 47677 connected with 10.0.0.4 port 5001
+[  1] local 192.168.70.135 port 55309 connected with 10.0.0.4 port 5001
 [ ID] Interval       Transfer     Bandwidth
-[  1] 0.0000-10.0019 sec  12.5 MBytes  10.5 Mbits/sec
+[  1] 0.0000-10.0018 sec  12.5 MBytes  10.5 Mbits/sec
 [  1] Sent 8921 datagrams
 [  1] Server Report:
 [ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
-[  1] 0.0000-10.0025 sec  11.2 MBytes  9.42 Mbits/sec   0.392 ms 905/8920 (10%)
+[  1] 0.0000-10.0020 sec  10.9 MBytes  9.14 Mbits/sec   0.563 ms 1143/8920 (13%)

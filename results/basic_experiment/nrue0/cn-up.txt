@@ -1,0 +1,46 @@
+------------------------------------------------------------
+Server listening on UDP port 5001
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.70.135 port 5001 connected with 192.168.70.134 port 51692
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-1.0000 sec   220 KBytes  1.80 Mbits/sec   3.285 ms 28/181 (15%)
+[  1] 1.0000-2.0000 sec   257 KBytes  2.11 Mbits/sec   1.009 ms 0/179 (0%)
+[  1] 2.0000-3.0000 sec   228 KBytes  1.87 Mbits/sec   4.282 ms 17/176 (9.7%)
+[  1] 3.0000-4.0000 sec   231 KBytes  1.89 Mbits/sec   3.153 ms 19/180 (11%)
+[  1] 4.0000-5.0000 sec   256 KBytes  2.09 Mbits/sec   0.950 ms 1/179 (0.56%)
+[  1] 5.0000-6.0000 sec   223 KBytes  1.82 Mbits/sec   3.862 ms 22/177 (12%)
+[  1] 6.0000-7.0000 sec   235 KBytes  1.93 Mbits/sec   0.919 ms 15/179 (8.4%)
+[  1] 7.0000-8.0000 sec   253 KBytes  2.07 Mbits/sec   3.463 ms 2/178 (1.1%)
+[  1] 8.0000-9.0000 sec   228 KBytes  1.87 Mbits/sec   1.084 ms 20/179 (11%)
+[  1] 9.0000-10.0000 sec   244 KBytes  2.00 Mbits/sec   3.153 ms 6/176 (3.4%)
+[  1] 0.0000-10.0199 sec  2.32 MBytes  1.94 Mbits/sec   3.961 ms 130/1787 (7.3%)
+[  3] WARNING: ack of last datagram failed.
+[  2] local 192.168.70.135 port 5001 connected with 192.168.70.134 port 49208
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  2] 0.0000-1.0000 sec   228 KBytes  1.87 Mbits/sec   6.033 ms 22/181 (12%)
+[  2] 1.0000-2.0000 sec   257 KBytes  2.11 Mbits/sec   0.984 ms 0/179 (0%)
+[  2] 2.0000-3.0000 sec   231 KBytes  1.89 Mbits/sec   3.509 ms 15/176 (8.5%)
+[  2] 3.0000-4.0000 sec   251 KBytes  2.06 Mbits/sec   1.060 ms 5/180 (2.8%)
+[  2] 4.0000-5.0000 sec   238 KBytes  1.95 Mbits/sec   4.359 ms 12/178 (6.7%)
+[  2] 5.0000-6.0000 sec   234 KBytes  1.92 Mbits/sec   1.008 ms 16/179 (8.9%)
+[  2] 6.0000-7.0000 sec   245 KBytes  2.01 Mbits/sec   3.811 ms 5/176 (2.8%)
+[  2] 7.0000-8.0000 sec   233 KBytes  1.91 Mbits/sec   2.030 ms 19/181 (10%)
+[  2] 8.0000-9.0000 sec   256 KBytes  2.09 Mbits/sec   0.922 ms 0/178 (0%)
+[  2] 9.0000-10.0000 sec   228 KBytes  1.87 Mbits/sec   3.935 ms 19/178 (11%)
+[  2] 0.0000-10.0048 sec  2.35 MBytes  1.97 Mbits/sec   3.700 ms 113/1787 (6.3%)
+[  4] WARNING: ack of last datagram failed.
+[  3] local 192.168.70.135 port 5001 connected with 192.168.70.134 port 57637
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3] 0.0000-1.0000 sec   234 KBytes  1.92 Mbits/sec   0.989 ms 18/181 (9.9%)
+[  3] 1.0000-2.0000 sec   247 KBytes  2.02 Mbits/sec   2.583 ms 6/178 (3.4%)
+[  3] 2.0000-3.0000 sec   227 KBytes  1.86 Mbits/sec   3.417 ms 19/177 (11%)
+[  3] 3.0000-4.0000 sec   256 KBytes  2.09 Mbits/sec   1.018 ms 2/180 (1.1%)
+[  3] 4.0000-5.0000 sec   227 KBytes  1.86 Mbits/sec   4.752 ms 20/178 (11%)
+[  3] 5.0000-6.0000 sec   251 KBytes  2.06 Mbits/sec   0.941 ms 4/179 (2.2%)
+[  3] 6.0000-7.0000 sec   233 KBytes  1.91 Mbits/sec   4.255 ms 15/177 (8.5%)
+[  3] 7.0000-8.0000 sec   235 KBytes  1.93 Mbits/sec   0.881 ms 15/179 (8.4%)
+[  3] 8.0000-9.0000 sec   248 KBytes  2.03 Mbits/sec   4.060 ms 5/178 (2.8%)
+[  3] 9.0000-10.0000 sec   233 KBytes  1.91 Mbits/sec   1.704 ms 17/179 (9.5%)
+[  3] 0.0000-10.0036 sec  2.34 MBytes  1.96 Mbits/sec   1.638 ms 121/1787 (6.8%)
+[  3] WARNING: ack of last datagram failed.
