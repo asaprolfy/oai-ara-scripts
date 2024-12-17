@@ -1,0 +1,38 @@
+------------------------------------------------------------
+Client connecting to 10.0.0.7, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 1121.52 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.70.135 port 40965 connected with 10.0.0.7 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0018 sec  12.5 MBytes  10.5 Mbits/sec
+[  1] Sent 8921 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0028 sec  11.3 MBytes  9.51 Mbits/sec   1.059 ms 833/8920 (9.3%)
+root@f240ac7c83d0:~# docker exec -it oai-ext-dn iperf -c 10.0.0.7 -u -b 10M --bind 192.168.70.135
+------------------------------------------------------------
+Client connecting to 10.0.0.7, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 1121.52 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.70.135 port 50238 connected with 10.0.0.7 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0018 sec  12.5 MBytes  10.5 Mbits/sec
+[  1] Sent 8921 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0023 sec  11.2 MBytes  9.40 Mbits/sec   0.697 ms 924/8920 (10%)
+root@f240ac7c83d0:~# docker exec -it oai-ext-dn iperf -c 10.0.0.7 -u -b 10M --bind 192.168.70.135
+------------------------------------------------------------
+Client connecting to 10.0.0.7, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 1121.52 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.70.135 port 58383 connected with 10.0.0.7 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0018 sec  12.5 MBytes  10.5 Mbits/sec
+[  1] Sent 8921 datagrams
+[  1] Server Report:
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  1] 0.0000-10.0096 sec  11.3 MBytes  9.44 Mbits/sec   1.105 ms 889/8920 (10%)
